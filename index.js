@@ -7,7 +7,7 @@
  */
 'use strict';
 //rewite promise, bluebird is much faster
-global.Promise = require('bluebird');
+// global.Promise = require('bluebird');
 
 //export
 module.exports = require('./lib/queue.js');
