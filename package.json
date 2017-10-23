@@ -4,7 +4,7 @@
   "description": "A simple queue thinkkoa middleware based on redis.",
   "main": "index.js",
   "scripts": {
-    "test": "npm run eslint",
+    "test": "npm run test-cov",
     "test-cov": "istanbul cover ./node_modules/mocha/bin/_mocha -- -t 50000 --recursive  -R spec test/",
     "prepublish": "npm test",
     "eslint": "eslint index.js"
@@ -17,9 +17,13 @@
   "devDependencies": {
     "babel-core": "^6.24.1",
     "babel-eslint": "^7.2.3",
+    "chai": "^4.1.2",
+    "chai-as-promised": "^7.1.1",
     "eslint": "^3.15.0",
     "istanbul": "^0.4.5",
-    "mocha": "^3.2.0"
+    "mocha": "^3.2.0",
+    "sinon": "^1.12.1",
+    "sinon-chai": "^2.6.0"
   },
   "dependencies": {
     "bluebird": "^3.5.1",
